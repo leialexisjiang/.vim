@@ -1,6 +1,18 @@
 # How to install .vim ?
 
+Run commands below in `~`:
+
+```
+git clone git@github.com:leialexisjiang/.vim.git && cd .vim && git submodule init && git submodule update
+```
+
+Use by symbolic linking:
 
 ```shell
-sh -c "$(curl -fsSL https://raw.github.com/leialexisjiang/.vim/master/install.sh)"
+ln -snfv ~/.vim/vimrc ~/.vimrc
+```
+
+Install vundle plugin:
+```
+vim +PluginInstall +qall
 ```
