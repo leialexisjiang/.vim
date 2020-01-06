@@ -1,6 +1,6 @@
 # How to install .vim ?
 
-Run commands below in `~`:
+Run commands below in `~/Projects`:
 
 ```
 git clone git@github.com:leialexisjiang/.vim.git && cd .vim && git submodule init && git submodule update
@@ -9,6 +9,7 @@ git clone git@github.com:leialexisjiang/.vim.git && cd .vim && git submodule ini
 Use by symbolic linking:
 
 ```shell
+ln -snfv ~/Projects/.vim ~/.vim
 ln -snfv ~/.vim/vimrc ~/.vimrc
 ```
 
